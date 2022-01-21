@@ -36,7 +36,7 @@ export default function AddExpenseModal({show, handleClose, defaultBudgetId }) {
                     <Form.Group className="mb-3" controlId="budgetId">
                         <Form.Label>Presupuesto</Form.Label>
                         <Form.Select defaultValue={defaultBudgetId} ref={budgetIdRef}>
-                            <option id={UNCATEGORIZED_BUDGET_ID}>Sin categoría</option>
+                            <option id={UNCATEGORIZED_BUDGET_ID}> Sin categoria </option>
                                 {budgets.map(budget => (
                                     <option key={budget.id} value={budget.id}>
                                         {budget.name}
